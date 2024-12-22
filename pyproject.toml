@@ -1,0 +1,23 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
+
+[project]
+name = "py-oop-algorithms"
+version = "0.0.0"
+description = "Python package with algorithms written using OOP"
+dynamic = ["readme"]
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.2.3",
+    "numpy>=2.2.1"
+]
+
+[tool.setuptools.dynamic]
+readme = {file=["README.md"], content-type="text/markdown"}
